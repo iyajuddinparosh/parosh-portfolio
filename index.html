@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Iyaj Uddin Parosh | CSE Student &amp; Aspiring Researcher</title>
+  <meta name="description" content="Iyaj Uddin Parosh — Computer Science & Engineering student exploring Artificial Intelligence, Cybersecurity, and emerging technologies. Building foundations today for tomorrow's innovations." />
+  <meta name="author" content="Iyaj Uddin Parosh" />
+
+  <!-- Open Graph / social preview tags -->
+  <meta property="og:title" content="Iyaj Uddin Parosh | CSE Student & Aspiring Researcher" />
+  <meta property="og:description" content="Exploring Artificial Intelligence, Cybersecurity, and Emerging Technologies." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:," />
+
+  <!-- Google Fonts: Space Grotesk (headings), Inter (body), JetBrains Mono (code/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS (Animate On Scroll) library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Our custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       PAGE LOADER (brief animation shown while the page loads)
+  ======================================================= -->
+  <div id="page-loader">
+    <div class="loader-mark">IP</div>
+  </div>
+
+  <!-- Scroll progress bar, filled by JS based on scroll position -->
+  <div id="scroll-progress"></div>
+
+  <!-- ======================================================
+       NAVBAR
+  ======================================================= -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <i class="fas fa-terminal"></i>
+        <span>Iyaj<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#focus" class="nav-link">Focus</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#learning" class="nav-link">Learning</a>
+        <a href="#books" class="nav-link">Books</a>
+        <a href="#goals" class="nav-link">Goals</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button id="mobile-menu-btn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================
+         1. HERO
+    ======================================================= -->
+    <section id="home" class="hero">
+      <!-- Animated network canvas: purely decorative background -->
+      <canvas id="network-canvas"></canvas>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-text" data-aos="fade-up">
+          <p class="eyebrow">$ whoami</p>
+          <h1 class="hero-name">
+            Hi, I'm <span class="gradient-text">Iyaj Uddin Parosh</span>
+          </h1>
+          <p class="hero-role">
+            CSE Student <span class="dot-sep">&bull;</span> Technology Explorer
+            <span class="dot-sep">&bull;</span> Aspiring Researcher
+          </p>
+
+          <div class="typing-line">
+            <span id="typed-text"></span><span class="cursor">&#9612;</span>
+          </div>
+
+          <p class="hero-desc">
+            I am a Computer Science and Engineering student passionate about exploring
+            different areas of technology and research. I enjoy learning, experimenting,
+            and building solutions that solve real-world problems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-diagram-project"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Honest, real counts only -- no fabricated statistics -->
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number" data-count="6">0</span>
+              <span class="stat-label">Languages Learning</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" data-count="6">0</span>
+              <span class="stat-label">Research Interests</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ======================================================
+         2. ABOUT
+    ======================================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/about</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-card glass" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            I am currently pursuing a <strong>Bachelor of Science in Computer Science &amp;
+            Engineering</strong> at Uttara University.
+          </p>
+          <p>
+            I'm passionate about exploring different domains of computing, including
+            Artificial Intelligence, Cybersecurity, Software Engineering, and Research —
+            still discovering exactly where I fit in, and enjoying every step of that process.
+          </p>
+          <p>
+            Right now, my focus is on strengthening my computer science fundamentals,
+            building meaningful projects, exploring research opportunities, and preparing
+            for higher studies abroad.
+          </p>
+          <p>
+            I strongly believe in continuous learning. Outside of coursework and code,
+            I enjoy reading, experimenting with new technology, and following ideas
+            wherever they lead.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         3. CURRENT FOCUS
+    ======================================================= -->
+    <section id="focus" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/focus</p>
+          <h2>Current Focus</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card glass" data-aos="fade-up" data-aos-delay="0">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>Artificial Intelligence</h3>
+            <p>Currently exploring AI concepts, machine learning, and intelligent systems.</p>
+          </div>
+          <div class="card glass" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+            <h3>Cybersecurity</h3>
+            <p>Learning networking, Linux, and security fundamentals.</p>
+          </div>
+          <div class="card glass" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+            <h3>Research</h3>
+            <p>Preparing myself for research opportunities and higher studies.</p>
+          </div>
+          <div class="card glass" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Software Development</h3>
+            <p>Building projects to strengthen practical programming skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         4. EDUCATION
+    ======================================================= -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/education</p>
+          <h2>Education</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item glass" data-aos="fade-up">
+            <p class="timeline-period">2024 &mdash; Present</p>
+            <h3>Bachelor of Science in Computer Science &amp; Engineering</h3>
+            <p class="timeline-place"><i class="fas fa-university"></i> Uttara University</p>
+          </div>
+
+          <div class="timeline-item glass" data-aos="fade-up" data-aos-delay="100">
+            <p class="timeline-period">2022</p>
+            <h3>Higher Secondary Certificate &mdash; Science</h3>
+            <p class="timeline-place">
+              <i class="fas fa-university"></i> Govt. Sundarban Adarsha College, Khulna
+            </p>
+            <p class="timeline-note">GPA 5.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         5. SKILLS
+    ======================================================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/skills</p>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card glass" data-aos="fade-up" data-aos-delay="0">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="tag-list">
+              <span class="tag">C</span>
+              <span class="tag">C++</span>
+              <span class="tag">C#</span>
+              <span class="tag">Java</span>
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="card glass" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class="fas fa-diagram-project"></i> Computer Science</h3>
+            <div class="tag-list">
+              <span class="tag">Data Structures</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">OOP</span>
+              <span class="tag">Database Systems</span>
+              <span class="tag">Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="card glass" data-aos="fade-up" data-aos-delay="200">
+            <h3><i class="fas fa-server"></i> Technologies</h3>
+            <div class="tag-list">
+              <span class="tag">Linux</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Networking</span>
+              <span class="tag">VMware</span>
+              <span class="tag">VirtualBox</span>
+              <span class="tag">VS Code</span>
+            </div>
+          </div>
+
+          <div class="card glass" data-aos="fade-up" data-aos-delay="300">
+            <h3><i class="fas fa-seedling"></i> Currently Exploring</h3>
+            <div class="tag-list">
+              <span class="tag tag-accent">React</span>
+              <span class="tag tag-accent">Tailwind CSS</span>
+              <span class="tag tag-accent">Research Methodology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         6. PROJECTS
+    ======================================================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/projects</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card project-card glass" data-aos="fade-up" data-aos-delay="0">
+            <div class="card-icon"><i class="fas fa-globe"></i></div>
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing my skills, projects, and academic journey.</p>
+          </div>
+
+          <div class="card project-card glass" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon"><i class="fas fa-users-gear"></i></div>
+            <h3>Student Management System</h3>
+            <p>An academic management application for handling student information and records.</p>
+          </div>
+
+          <div class="card project-card glass" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon"><i class="fas fa-key"></i></div>
+            <h3>Password Generator</h3>
+            <p>A simple tool for generating strong, secure passwords.</p>
+          </div>
+
+          <div class="card project-card project-card-more glass" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon"><i class="fas fa-ellipsis"></i></div>
+            <h3>More on the way</h3>
+            <p>More exciting projects coming soon&hellip;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         7. RESEARCH INTERESTS
+    ======================================================= -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/research</p>
+          <h2>Research Interests</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card research-card glass" data-aos="zoom-in" data-aos-delay="0">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>Artificial Intelligence</h3>
+          </div>
+          <div class="card research-card glass" data-aos="zoom-in" data-aos-delay="60">
+            <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+            <h3>Cybersecurity</h3>
+          </div>
+          <div class="card research-card glass" data-aos="zoom-in" data-aos-delay="120">
+            <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>Software Engineering</h3>
+          </div>
+          <div class="card research-card glass" data-aos="zoom-in" data-aos-delay="180">
+            <div class="card-icon"><i class="fas fa-cloud"></i></div>
+            <h3>Cloud Computing</h3>
+          </div>
+          <div class="card research-card glass" data-aos="zoom-in" data-aos-delay="240">
+            <div class="card-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Renewable Energy</h3>
+          </div>
+          <div class="card research-card glass" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Power Systems</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         8. LEARNING JOURNEY
+    ======================================================= -->
+    <section id="learning" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/learning</p>
+          <h2>Learning Journey</h2>
+        </div>
+
+        <p class="section-intro" data-aos="fade-up">
+          I believe in continuous learning. Here's what I'm actively picking up right now
+          on my way to becoming a well-rounded engineer and researcher.
+        </p>
+
+        <div class="grid grid-5">
+          <div class="learning-item glass" data-aos="fade-up" data-aos-delay="0">
+            <i class="fas fa-circle-check"></i> Java
+          </div>
+          <div class="learning-item glass" data-aos="fade-up" data-aos-delay="80">
+            <i class="fas fa-circle-check"></i> Python
+          </div>
+          <div class="learning-item glass" data-aos="fade-up" data-aos-delay="160">
+            <i class="fas fa-circle-check"></i> Web Development
+          </div>
+          <div class="learning-item glass" data-aos="fade-up" data-aos-delay="240">
+            <i class="fas fa-circle-check"></i> Research Methodology
+          </div>
+          <div class="learning-item glass" data-aos="fade-up" data-aos-delay="320">
+            <i class="fas fa-circle-check"></i> React
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         9. BOOKS (bookshelf section)
+    ======================================================= -->
+    <section id="books" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/books</p>
+          <h2>Books I've Enjoyed</h2>
+        </div>
+
+        <div class="bookshelf" data-aos="fade-up">
+          <div class="book" style="--book-color: var(--primary);">
+            <i class="fas fa-book"></i>
+            <span>Kaizen</span>
+          </div>
+          <div class="book" style="--book-color: var(--secondary);">
+            <i class="fas fa-book"></i>
+            <span>Ikigai</span>
+          </div>
+          <div class="book" style="--book-color: var(--accent);">
+            <i class="fas fa-book"></i>
+            <span>The Forty Rules of Love</span>
+          </div>
+          <div class="book" style="--book-color: var(--primary);">
+            <i class="fas fa-book"></i>
+            <span>It Ends With Us</span>
+          </div>
+          <div class="shelf-plank"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         10. GOALS
+    ======================================================= -->
+    <section id="goals" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/goals</p>
+          <h2>Goals</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card glass" data-aos="fade-up">
+            <h3><i class="fas fa-flag"></i> Short Term</h3>
+            <ul class="goal-list">
+              <li>Strengthen Computer Science Fundamentals</li>
+              <li>Build Meaningful Projects</li>
+              <li>Participate in Research</li>
+              <li>Learn Modern Technologies</li>
+            </ul>
+          </div>
+
+          <div class="card glass" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class="fas fa-rocket"></i> Long Term</h3>
+            <ul class="goal-list">
+              <li>Pursue MSc / PhD Abroad</li>
+              <li>Contribute to Impactful Research</li>
+              <li>Build Innovative Technologies</li>
+              <li>Contribute to the Global Tech Community</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         11. CONTACT
+    ======================================================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">$ cd ~/contact</p>
+          <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-card glass" data-aos="fade-up">
+          <p class="contact-intro">
+            Feel free to reach out if you'd like to connect, collaborate, or just talk about tech.
+          </p>
+
+          <div class="contact-grid">
+            <a href="mailto:iyajuddinparosh@gmail.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>iyajuddinparosh@gmail.com</span>
+            </a>
+            <a href="https://github.com/iyajuddinparosh" target="_blank" rel="noreferrer" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/iyajuddinparosh</span>
+            </a>
+            <a href="https://linkedin.com/in/iyajuddinparosh" target="_blank" rel="noreferrer" class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/iyajuddinparosh</span>
+            </a>
+            <a href="https://facebook.com/iyajuddinparosh" target="_blank" rel="noreferrer" class="contact-item">
+              <i class="fab fa-facebook"></i>
+              <span>facebook.com/iyajuddinparosh</span>
+            </a>
+            <div class="contact-item contact-item-static">
+              <i class="fas fa-location-dot"></i>
+              <span>Bangladesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================
+       12. FOOTER
+  ======================================================= -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; Developed by <span class="gradient-text">Iyaj Uddin Parosh</span></p>
+      <p class="footer-meta">Built using HTML, CSS and JavaScript &bull; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- AOS library script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Our custom script -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
